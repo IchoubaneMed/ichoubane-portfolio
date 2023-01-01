@@ -1,0 +1,81 @@
+.home {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_1 {
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(#11002bff, #5a2ca0ff);
+    position: absolute;
+    top: 0;
+}
+
+.home_2 {
+    width: 100%;
+    height: 50vh;
+    background-color: #f2f2f2ff;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 15px;
+}
+
+.home_2 .purple {
+    color: #5a2ca0ff;
+}
+
+.home_2 .orange {
+    color: #ff6600ff;
+    font-style: italic;
+}
+
+.wrapper {
+    height: 100%;
+    animation: move 5s ease-in-out infinite alternate;
+    overflow: hidden;
+}
+
+.home_2 .links {
+    height: 30px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home_2 .links a {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+}
+
+.home_2 .links img {
+    height: 100%;
+    cursor: pointer;
+}
+
+
+.home_picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 7px solid #ff6600ff;
+    z-index: 1;
+}
+
+.home_picture > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
