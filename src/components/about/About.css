@@ -1,0 +1,94 @@
+.about {
+    width: 100%;
+    height: 100vh;
+    background-color: #f2f2f2ff;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.about_clip {
+    background-color: #5a2ca0ff;
+    clip-path: circle(50% at 50% 50%);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.about_title {
+    color: #ff6600ff;
+    font-size: 25px;
+    margin-bottom: 50px;
+    z-index: 5;
+}
+
+.about_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 50px;
+}
+
+.about_img {
+    width: 230px;
+    height: 275px;
+    position: relative;
+    z-index: 5;
+}
+
+.about_border_1 {
+    width: 100%;
+    height: 100%;
+    border: 6px solid #ff6600ff;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Changing the child element's CSS when the parent is hovered */
+.about_img:hover .about_border_1 {
+    top: -15px;
+    left: -15px;
+}
+
+.about_border_2 {
+    width: 100%;
+    height: 100%;
+    border: 6px solid #ff6600ff;
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Changing the child element's CSS when the parent is hovered */
+.about_img:hover .about_border_2 {
+    bottom: -15px;
+    right: -15px;
+}
+
+.about_img img {
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    position: absolute;
+}
+
+.about_text {
+    width: 40%;
+    font-size: 17px;
+    color: #f2f2f2ff;
+    z-index: 5;
+}
+
+.about_text p {
+    margin-bottom: 20px;
+}
