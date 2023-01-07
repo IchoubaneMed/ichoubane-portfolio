@@ -80,6 +80,13 @@
     height: 100%;
     z-index: 999;
     position: absolute;
+    filter: grayscale(100%);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Changing the child element's CSS when the parent is hovered */
+.about_img:hover img {
+    filter: none;
 }
 
 .about_text {
