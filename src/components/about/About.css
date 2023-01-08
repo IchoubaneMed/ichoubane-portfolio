@@ -120,4 +120,25 @@
         width: 100%;
     }
 }
+
+/* Tablette Devices */
+@media screen and (max-width: 768px) {
+	.about {
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        padding-bottom: 50px;
+    }
+    .about_clip {
+        display: none;
+    }
+    .about_title {
+        margin-bottom: 10px;
+    }
+
+    .about_text {
+        color: #000;
+        width: 100%;
+    }
+}
     
