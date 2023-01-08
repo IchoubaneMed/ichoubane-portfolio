@@ -15,7 +15,15 @@ function Home() {
                     </picture>
                 </h1>
                 <h1>I'm <span className="purple">Mohamed Ichoubane</span></h1>
-                <h1>I'm a <span className="orange">Front-End developer</span></h1>
+                {/*<div className="wrapper">
+                    <div className="static-txt">I'm a</div>
+                    <ul className="dynamic-txts">
+                        <li><span>GIS Engineer</span></li>
+                        <li><span>GIS Developer</span></li>
+                        <li><span>Front End Developer</span></li>
+                    </ul>
+                </div>*/}
+                <h1>I'm a <span className="orange">Front-End developer & GIS Engineer</span></h1>
                 <div className="links">
                     <a href="https://github.com/IchoubaneMed" target="_blank" rel="noreferrer">
                         <img src={github} alt="github" />

@@ -91,6 +91,19 @@ button:hover {
     color: #000;
 }
 
+.asterisk {
+    color: red;
+}
+
+.notification {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: lightgreen;
+    color: limegreen;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 /* Mobile Devices */
 @media screen and (max-width: 480px) {
     .contact {
