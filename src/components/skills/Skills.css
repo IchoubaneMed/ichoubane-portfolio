@@ -78,3 +78,20 @@
 .skills_card:hover .skills_card_title {
     color: #f2f2f2ff;
 }
+
+/* Mobile Devices */
+@media screen and (max-width: 480px) {
+    .skills {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 30px;
+    }
+
+    .skills_container > h1 {
+        margin: 15px 0px;
+    }
+
+    .skills_cards {
+        margin-bottom: 30px;
+    }
+}
