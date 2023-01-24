@@ -10,7 +10,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
@@ -119,7 +119,8 @@
 
     .projects_container > h1 {
         font-size: 30px;
-        margin: 15px 0px;
+        margin-top: 80px;
+        margin-bottom: 15px;
     }
 
     .projects_cards {
@@ -135,7 +136,8 @@
     }
     .projects_container > h1 {
         font-size: 30px;
-        margin: 15px 0px;
+        margin-top: 80px;
+        margin-bottom: 15px;
     }
 
     .projects_cards {
