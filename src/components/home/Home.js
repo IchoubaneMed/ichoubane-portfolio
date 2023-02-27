@@ -3,7 +3,40 @@ import me from '../../images/me.JPG';
 import github from '../../images/github.png';
 import linkedin from '../../images/linkedin.png';
 
+import { useState, useEffect, useRef } from 'react';
+
 function Home() {
+    const [word, setWord] = useState("Full Stack Developer");
+    const [letterIndex, setLetterIndex] = useState(0);
+    const [currentWord, setCurrentWord] = useState("");
+    const timeoutRef = useRef(null);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setWord("");
+            setTimeout(() => setWord("Full Stack Developer"), 1000);
+        }, 12000);
+
+        return () => clearInterval(interval);
+    }, []);
+
+    useEffect(() => {
+        if (letterIndex < word.length) {
+            timeoutRef.current = setTimeout(() => {
+                setCurrentWord(currentWord + word.charAt(letterIndex));
+                setLetterIndex(letterIndex + 1);
+            }, 100);
+        } else {
+            timeoutRef.current = setTimeout(() => {
+                setCurrentWord("");
+                setLetterIndex(0);
+            }, 1000);
+        }
+
+        return () => clearTimeout(timeoutRef.current);
+    }, [currentWord, letterIndex, word]);
+
+
     return (
         <div className="home">
             <div className="home_1"></div>
@@ -23,7 +56,7 @@ function Home() {
                         <li><span>Front End Developer</span></li>
                     </ul>
                 </div>*/}
-                <h1>I'm a <span className="orange">Front-End developer & GIS Engineer</span></h1>
+                <h1>I'm a <span className="orange" id="word">{currentWord}</span></h1>
                 <div className="links">
                     <a href="https://github.com/IchoubaneMed" target="_blank" rel="noreferrer">
                         <img src={github} alt="github" />
